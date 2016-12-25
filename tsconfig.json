@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "declaration": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "types": [
+      /*"core-js",*/
+      "jasmine",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "!/node_modules/@types",
+    "bundles"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  },
+  "files": [
+    "./ngrx-action-creator-factory.ts",
+    "./src/ngrx-action-creator-factory.ts",
+    "./src/index.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "./src/ngfactory",
+    "debug": false
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false }
+}
