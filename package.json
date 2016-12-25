@@ -35,7 +35,7 @@
   "devDependencies": {
     "@angular/common": "2.2.1",
     "@angular/compiler": "2.2.1",
-    "@angular/compiler-cli": "^0.6.2",
+    "@angular/compiler-cli": "2.4.1",
     "@angular/core": "2.2.1",
     "@angular/http": "2.2.1",
     "@angular/platform-browser": "2.2.1",
