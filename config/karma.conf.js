@@ -34,7 +34,7 @@ module.exports = function(config) {
     webpackServer: { noInfo: true },
 
     // reporters: [ 'mocha', 'coverage' ],
-    reporters: [ 'mocha' ],
+    reporters: [ 'mocha', 'progress' ],
 
     // web server port
     port: 9876,
