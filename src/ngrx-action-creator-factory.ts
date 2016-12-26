@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Action } from '@ngrx/store';
 
 /* Action Creator Factory
  * ======================
@@ -7,7 +6,7 @@ import { Action } from '@ngrx/store';
  * const addTodo = ActionCreatorFactory.create<string>('ADD_TODO')
  * 
  **/
-export class ActionCreator<T> implements Action {
+export class ActionCreator<T> {
   constructor(
     public type: string = 'NOT_SET',
     public payload?: T
@@ -16,9 +15,13 @@ export class ActionCreator<T> implements Action {
 @Injectable()
 export class ActionCreatorFactory {
   static create?<T>(type: string, defaultPayloadValue?: any) {
-    return (payload?: T) => {
+    return (payload?: T): ActionCreator<any> => {
       const _payload = payload || typeof payload !== 'undefined' ? payload : defaultPayloadValue;
       return new ActionCreator<T>(type, _payload);
-    }
+    };
+  }
+
+  create?<T>(type: string, defaultPayloadValue?: any) {
+    return ActionCreatorFactory.create<T>(type, defaultPayloadValue);
   }
 }

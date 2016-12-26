@@ -2,7 +2,7 @@ import {
   
 } from '@angular/core/testing';
 
-import { ActionCreatorFactory } from './ngrx-action-creator-factory';
+import { ActionCreatorFactory } from '../ngrx-action-creator-factory';
 
 const zone = jasmine.createSpyObj('zone', ['run']);
 
