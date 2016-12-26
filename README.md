@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/orizens/ng2-youtube-player.svg?branch=master)](https://travis-ci.org/orizens/ng2-youtube-player)
-
 # Ngrx Action Creator Factory
 This is an angular 2 provider based - read about the concept at [Simple Action Creators for ngrx/store in Angular 2](http://orizens.com/wp/topics/simple-action-creators-for-ngrxstore-in-angular-2/).  
 This component came out as a result of the [open source project Echoes Player](http://github.com/orizens/echoes-ng2) - an alternative player for watching and listening to media from youtube.
@@ -42,8 +40,7 @@ Next, use the **ngrx-action-creator-factory** either as a static factory or as a
 ```typescript
 import { Injectable } from '@angular/core';
 import { Action } from '@ngrx/store';
-// import { ActionCreatorFactory } from '../action-creator.util';
-import { ActionCreatorFactory } from 'ngrx-action-creator-factory/src/ngrx-action-creator-factory';
+import { ActionCreatorFactory } from 'ngrx-action-creator-factory';
 
 @Injectable()
 export class NowPlaylistActions {
