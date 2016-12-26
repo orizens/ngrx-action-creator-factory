@@ -9,7 +9,7 @@
     "build:test": "tsc --project ./src",
     "clean": "npm run clean:js && npm run clean:def && npm run clean:aot",
     "clean:def": "rimraf src/*.d.ts",
-    "clean:js": "rimraf src/*.js",
+    "clean:js": "rimraf src/*.js && rimraf ./ngrx-action-creator-factory.js",
     "clean:aot": "rimraf src/*metadata.json && rimraf ./*metadata.json",
     "clean:node": "rimraf node_modules",
     "dev": "npm run watch & karma start karma.conf.js --bdd",

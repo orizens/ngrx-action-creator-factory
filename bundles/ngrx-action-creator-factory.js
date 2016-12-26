@@ -40,13 +40,16 @@ System.registerDynamic("src/ngrx-action-creator-factory", ["@angular/core"], tru
                 return new ActionCreator(type, _payload);
             };
         };
+        ActionCreatorFactory.prototype.create = function (type, defaultPayloadValue) {
+            return ActionCreatorFactory.create(type, defaultPayloadValue);
+        };
         return ActionCreatorFactory;
     }();
     ActionCreatorFactory = __decorate([core_1.Injectable(), __metadata("design:paramtypes", [])], ActionCreatorFactory);
     exports.ActionCreatorFactory = ActionCreatorFactory;
     return module.exports;
 });
-System.registerDynamic("src/index", ["@angular/core", "@angular/common", "./ngrx-action-creator-factory"], true, function ($__require, exports, module) {
+System.registerDynamic("src/index", ["@angular/core", "./ngrx-action-creator-factory"], true, function ($__require, exports, module) {
     "use strict";
 
     var define,
@@ -63,16 +66,12 @@ System.registerDynamic("src/index", ["@angular/core", "@angular/common", "./ngrx
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1 = $__require("@angular/core");
-    var common_1 = $__require("@angular/common");
     var ngrx_action_creator_factory_1 = $__require("./ngrx-action-creator-factory");
     var NgrxActionCreatorFactoryModule = function () {
         function NgrxActionCreatorFactoryModule() {}
         return NgrxActionCreatorFactoryModule;
     }();
     NgrxActionCreatorFactoryModule = __decorate([core_1.NgModule({
-        imports: [common_1.CommonModule],
-        declarations: [],
-        exports: [ngrx_action_creator_factory_1.ActionCreatorFactory],
         providers: [ngrx_action_creator_factory_1.ActionCreatorFactory]
     }), __metadata("design:paramtypes", [])], NgrxActionCreatorFactoryModule);
     exports.NgrxActionCreatorFactoryModule = NgrxActionCreatorFactoryModule;
