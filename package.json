@@ -15,7 +15,7 @@
     "dev": "npm run watch & karma start karma.conf.js --bdd",
     "lite": "lite-server",
     "postversion": "git push origin master",
-    "prepublish": "node ./node_modules/@angular/compiler-cli/src/main.js && node make.js",
+    "prepublish": "tsc && node make.js",
     "pretest": "npm run clean && npm run build:test",
     "preversion": "npm run clean && npm run prepublish && npm test",
     "setup": "npm run typings -- install",
