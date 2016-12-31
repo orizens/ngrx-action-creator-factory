@@ -2,8 +2,8 @@
 This is an angular 2 provider based (or a simple class) - read about the concept at [Simple Action Creators for ngrx/store in Angular 2](http://orizens.com/wp/topics/simple-action-creators-for-ngrxstore-in-angular-2/).  
 This service came out as a result of the [open source project Echoes Player](http://github.com/orizens/echoes-ng2) - an alternative player for watching and listening to media from youtube.
 
-## What It Solves
-This factory allows to decalre a **typed action creator** function and have type support when using this function. 
+## The Benefit - Minimal & Typed
+This factory allows to decalre a **minimal** action creator declaration with a **typed payload** for the action creator function and have type support when using this function. 
 This also results (in most cases) in a one line declaration. 
 
 ## Angular 2 Support
