@@ -14,7 +14,7 @@ MIT
 
 ## Installation
 ```
-npm install ngrx-action-creator-factory --save-dev
+npm install ngrx-action-creator-factory --save
 ```
 
 ## Supported API
